@@ -7,7 +7,8 @@ HLSConfig:
         result: fixed<16,6>
       Trace: false
     input_1:
-      Precision: fixed<10,3>
+      Precision:
+        result: fixed<16,6>
       Trace: false
     q_activation:
       Precision:
@@ -77,10 +78,10 @@ HLSConfig:
     TraceOutput: false
 IOType: io_parallel
 InputData: null
-KerasModel: !keras_model 'qkmodel_1/hls4ml_prj/keras_model.h5'
-OutputDir: qkmodel_1/hls4ml_prj
+KerasModel: !keras_model 'hls4ml_prj/keras_model.h5'
+OutputDir: hls4ml_prj
 OutputPredictions: null
 Part: xcvu13p-flga2577-2-e
 ProjectName: myproject
-Stamp: AECAd5Cc
+Stamp: ACDB342C
 Version: 1.0.0
